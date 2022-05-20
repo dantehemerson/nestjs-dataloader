@@ -1,10 +1,10 @@
 {
-  "name": "nestjs-dataloader",
-  "version": "2.0.6",
+  "name": "@dantehemerson/nestjs-dataloader",
+  "version": "1.0.0",
   "description": "A NestJS decorator for dataloader",
   "license": "MIT",
-  "repository": "https://github.com/krislefeber/nestjs-dataloader",
-  "author": "Kris Lefeber <krislefeber@gmail.com>",
+  "repository": "https://github.com/dantehemerson/nestjs-dataloader",
+  "author": "Dante Calderon <dantehemerson@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
