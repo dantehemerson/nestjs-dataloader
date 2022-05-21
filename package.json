@@ -1,6 +1,6 @@
 {
   "name": "@dantehemerson/nestjs-dataloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NestJS decorator for dataloader",
   "license": "MIT",
   "repository": "https://github.com/dantehemerson/nestjs-dataloader",
