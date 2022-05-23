@@ -28,6 +28,8 @@
     "dataloader": "^2.0.0"
   },
   "devDependencies": {
+    "@apollo/gateway": "^2.0.3",
+    "@nestjs/apollo": "^10.0.12",
     "@nestjs/cli": "^8.2.6",
     "@nestjs/common": "^8.4.5",
     "@nestjs/core": "^8.4.5",
@@ -36,11 +38,12 @@
     "@nestjs/testing": "^8.4.5",
     "@nestjs/typeorm": "^8.0.4",
     "@types/jest": "^27.5.1",
-    "apollo-server-express": "^3.7.0",
+    "apollo-server-express": "^3.6.2",
     "apollo-server-testing": "^2.25.3",
     "graphql": "^15.8.0",
     "jest": "^28.1.0",
     "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.5",
     "sqlite3": "^4.2.0",
     "ts-jest": "^28.0.2",
     "ts-morph": "^14.0.0",
