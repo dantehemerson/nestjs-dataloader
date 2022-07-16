@@ -6,6 +6,7 @@ import gql from "graphql-tag";
 import { AppModule } from "./../src/app.module";
 import { Factory } from 'typeorm-factory'
 import { Account } from "../src/account/account.entity";
+import { ApolloDriver } from "@nestjs/apollo";
 
 describe("AppModule", () => {
   let app: INestApplication;
@@ -22,8 +23,11 @@ describe("AppModule", () => {
     const module: GraphQLModule = moduleFixture.get<GraphQLModule>(
       GraphQLModule
     );
+
+    const adapter = module.graphQlAdapter;
+
     // apolloServer is protected, we need to cast module to any to get it
-    apolloClient = createTestClient((module as any).apolloServer);
+    apolloClient = createTestClient((adapter as any).instance);
   });
 
   afterAll(() => app.close());
