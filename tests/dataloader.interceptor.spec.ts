@@ -26,11 +26,11 @@ describe(DataLoaderInterceptor.name, () => {
     expect(interceptor).toBeDefined()
   })
 
-  describe('when context is GraphQL', () => {
+  describe.only('when context is GraphQL', () => {
     it('should inject dataloader', () => {
-      const gqlExecutionContext = {}
+      const gqlExecutionContext = { }
       const executionContextHost =  new ExecutionContextHost([undefined, undefined, gqlExecutionContext])
-      
+
       interceptor.intercept(executionContextHost, handler) 
   
       expect(handler.handle).toHaveBeenCalled()

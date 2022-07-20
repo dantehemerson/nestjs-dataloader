@@ -1,8 +1,8 @@
-import DataLoader = require("dataloader");
 import { Injectable } from "@nestjs/common";
+import DataLoader from "dataloader";
 import { NestDataLoader } from "../../..";
-import { AccountService } from "./account.service";
 import { Account } from "./account.entity";
+import { AccountService } from "./account.service";
 
 @Injectable()
 export class AccountLoader implements NestDataLoader<string, Account> {

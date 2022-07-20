@@ -3,11 +3,14 @@ import { GraphQLModule } from "@nestjs/graphql";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { join } from "path";
 import { AccountModule } from "./account/account.module";
+import { ApolloDriver } from '@nestjs/apollo';
 
 @Module({
   imports: [
     GraphQLModule.forRoot({
+      driver: ApolloDriver,
       autoSchemaFile: true,
+      playground: false,
       debug: true,
     }),
     TypeOrmModule.forRoot({
